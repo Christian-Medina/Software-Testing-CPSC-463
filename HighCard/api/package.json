@@ -1,0 +1,61 @@
+{
+  "name": "cardcounterz-api",
+  "description": "API for the Cardcounterz project",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "jason",
+    "email": "jasonhellwig@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test.static": "yarn run eslint",
+    "test.dynamic": "yarn run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.3",
+    "@feathersjs/errors": "^3.3.3",
+    "@feathersjs/express": "^1.2.6",
+    "@feathersjs/feathers": "^3.2.2",
+    "@feathersjs/socketio": "^3.2.5",
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "bluebird": "^3.5.2",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "feathers-memory": "^2.2.0",
+    "feathers-mongodb": "^3.3.0",
+    "feathers-nedb": "^3.1.0",
+    "helmet": "^3.13.0",
+    "mongodb": "^3.1.6",
+    "nedb": "^1.8.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

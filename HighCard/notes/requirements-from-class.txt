@@ -1,0 +1,14 @@
+1:  When a user clicks a link for the game site it will navigate to the homepage.
+2:  When a user clisk on a new game button the sytem will start a new game
+	2a: There will be two players and each one will have a deck of cards
+3: When the player clicks their card-back the system shall place the top card ont he game board face-up
+4: When the opponent clicks their card-back the system shall place the top card on the game board face-up next to the other player's card
+5: When both players card's are on the game board The sytem shall determine which player has the highest card and display the winner of the hand
+	5a: If the players card's on the game board are bot the same rank the system shall discard the hand
+
+
+
+MAKE GOALS
+
+
+

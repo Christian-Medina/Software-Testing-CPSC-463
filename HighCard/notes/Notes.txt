@@ -1,0 +1,65 @@
+Components:
+  - app
+  - opponent
+  - player
+  - board
+  - normal hand
+  - tied hand
+
+State:
+	- game Type
+  - war.Player Deck
+  - war.Opponent Deck
+	- war.playerReady
+	- war.playerHand
+	- war.oppenentRead
+	- war.oppenentHand
+
+
+Feathers Layer:
+Deck Service
+War Service
+Game Service
+Player Service
+Chat Service
+
+
+
+Date Modelling
+
+//overall structure
+Game
+- game
+- players
+  -decks
+    -cards
+- decks
+
+//collections, will be very active, need to have ability to switch players & keep track of sequence
+Card
+- _id
+- playerId
+- GameId
+- DeckId
+- suit
+- rank
+
+Deck -> possibly use a deck to track sequence
+array of cardIds
+needs to support pop and push
+shuffle marker
+
+GET /deck/:id/shuffled -> get shuffled version of existing deck
+POST /deck/:id/cycled -> returns a ve
+
+
+
+
+Game
+- _id
+- type
+
+Players
+- _id
+- gameId
+

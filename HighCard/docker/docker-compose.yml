@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    image: jasonh815/cardcounterz-api
+    build:
+      context: ../api
+    depends_on:
+      - mongo
+    restart: always
+    ports:
+      - "80:3030"
+    env_file:
+      - "api.env"
+    volumes:
+       - ../build:/app/public
+  mongo:
+    image: "mongo:4"
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ../api/data/mongo:/data/db
+    command: ${MONGO_START_COMMAND}
+

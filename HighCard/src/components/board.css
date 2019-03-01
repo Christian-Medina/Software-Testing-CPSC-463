@@ -1,0 +1,14 @@
+.glow-effect {
+  /*background-color: #ccc;*/
+  border: 1px solid transparent;
+  -webkit-transition: border 0.3s linear, box-shadow 0.5s linear;
+  -moz-transition: border 0.3s linear, box-shadow 0.5s linear;
+  transition: border 0.3s linear, box-shadow 0.5s linear;
+}
+
+.glow-effect.winner {
+  border-color: #ff6308;
+  -webkit-box-shadow: 0 0 200px 50px #ff6308;
+  -moz-box-shadow: 0 0 200px 50px #ff6308;
+  box-shadow: 0 0 200px 50px #ff6308;
+}

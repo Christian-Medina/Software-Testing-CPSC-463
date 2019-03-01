@@ -1,0 +1,47 @@
+host mongodb on a public server
+host API
+
+get Postman
+try API calls
+
+Set up bootstrap
+  install bootstrap (done)
+  include bootstrap in a html file
+  test that bootstrap works
+
+create components
+  card
+    display card back image based on card value
+  deck
+    display deck card-back and current deck count
+    onclick to start/cycle next hand
+  game-board
+    shows the hand from the backend (GET hand)
+
+api calls:
+  deck creation
+  player creation
+  game creation
+
+determine a winner:
+  what part of the code does this happen? (front-end? back-end? Implications of each choice)
+  GET hand
+    returns two cards and the winner of the hand
+  POST/PUT goes to next hand
+
+
+
+ --- Stretch Goals ------------------------------------------------
+ set up redux
+   install redux package (done)
+   configure redux in index.js
+
+ have redux mirror the DB
+   connect websocket to backend
+   have websocket console.log events from backend
+   have websocket mirror state from backend
+
+   actual war
+
+
+

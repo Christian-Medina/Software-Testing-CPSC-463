@@ -1,0 +1,10 @@
+{
+  "host": "jasonhellwig.me",
+  "port": 3030,
+  "mongodb": {
+    "url": "mongodb://mongo:27017/cardcounterz",
+    "user": "MONGO_USER",
+    "password": "MONGO_PASSWORD",
+    "authEnabled": "AUTH_ENABLED"
+  }
+}
